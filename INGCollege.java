@@ -409,11 +409,11 @@ public class INGCollege implements ActionListener
                      boolean newAC1 = false;
                      for (Course CO:data)
                      {
-                         
+
                          if (CO.getCourseID().equals(CourseID))
                          {
                              newAC1 = true;
-                             if (CO instanceof AcademicCourse)
+                             if (CO instanceof AcademicCourse)         // the operator is used to check the type of obj
                              {
                                  AC= (AcademicCourse) CO;
                                  if (AC.getisRegistered()==true)
@@ -461,7 +461,7 @@ public class INGCollege implements ActionListener
                          
                          {
                              newNAC1 = true;
-                             if (CO instanceof NonAcademicCourse)
+                             if (CO instanceof NonAcademicCourse)   // // the operator is used to check the type of obj
                              {
                                  NAC = (NonAcademicCourse)CO;
                                  if (NAC.getisRegistered()==true)
@@ -495,7 +495,7 @@ public class INGCollege implements ActionListener
                      for(Course C:data){
                          if (C.getCourseID().equals(CourseID))
                          {
-                             if(C instanceof NonAcademicCourse)
+                             if(C instanceof NonAcademicCourse)  // the operator is used to check the type of obj
                              {
                                  NAC= (NonAcademicCourse) C;
                                  if(NAC.getisRemoved()==false)
