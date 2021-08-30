@@ -414,6 +414,7 @@ public class INGCollege implements ActionListener
                          {
                              newAC1 = true;
                              if (CO instanceof AcademicCourse)         // the operator is used to check the type of obj
+                             //Comparision operator
                              {
                                  AC= (AcademicCourse) CO;
                                  if (AC.getisRegistered()==true)
