@@ -1,8 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
+//import java.util.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+//works for all type of data type / has no fixed size
 
 public class INGCollege implements ActionListener 
 {
@@ -21,9 +22,9 @@ public class INGCollege implements ActionListener
     private JButton Add,Register,Display,Clear,NextPage,
     nAdd,nRegister,nRemove,nDisplay,nClear,PreviousPage;
     
-    private ArrayList<Course>data=new ArrayList<>();
-    private AcademicCourse AC;
-    private NonAcademicCourse NAC;
+    private ArrayList<Course>data=new ArrayList<>();        //has no fixed size
+    private AcademicCourse AC;                              //object for Academic course  
+    private NonAcademicCourse NAC;                          //object for non academic course
     
     public INGCollege()
     {
@@ -408,6 +409,7 @@ public class INGCollege implements ActionListener
                      boolean newAC1 = false;
                      for (Course CO:data)
                      {
+                         
                          if (CO.getCourseID().equals(CourseID))
                          {
                              newAC1 = true;
