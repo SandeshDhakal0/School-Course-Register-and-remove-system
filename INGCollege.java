@@ -285,7 +285,7 @@ public class INGCollege implements ActionListener
         PreviousPage.setBounds(550,575,150,30);
         PreviousPage.setFont(new Font("Serif",Font.BOLD,15));
         p2.add(PreviousPage);
-        PreviousPage.addActionListener(this);
+        PreviousPage.addActionListener(this);                   //registering the components with the listener
         
         
         p1.setSize(750,700);
@@ -300,7 +300,7 @@ public class INGCollege implements ActionListener
         
         
         
-     //Action Listiner    
+     //Action Performed method is used 
     } 
   public void actionPerformed(ActionEvent e)
     {
@@ -395,6 +395,8 @@ public class INGCollege implements ActionListener
         }
              else if (e.getSource()==Register)              //for using the register button on Academic course
              {
+                 //the register registers all the text fields 
+                 //which is a error
                  String CourseID="";
                  String CourseLeader="";
                  String LecturerName="";
@@ -462,7 +464,7 @@ public class INGCollege implements ActionListener
                          
                          {
                              newNAC1 = true;
-                             if (CO instanceof NonAcademicCourse)   // // the operator is used to check the type of obj
+                             if (CO instanceof NonAcademicCourse)   // the operator is used to check the type of obj
                              {
                                  NAC = (NonAcademicCourse)CO;
                                  if (NAC.getisRegistered()==true)
